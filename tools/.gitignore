@@ -17,3 +17,6 @@
 /seek_print
 /uncoded_frame
 /zmqsend
+/enum_options
+/scale_slice_test
+/venc_data_dump
