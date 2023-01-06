@@ -8,12 +8,15 @@ on:
 jobs:
   sync-upstream:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch: ["master", "release/5.1"] 
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           upstream_repository: FFmpeg/FFmpeg
-          upstream_branch: master
-          target_branch: master
+          upstream_branch: ${{ matrix.branch }}
+          target_branch: ${{ matrix.branch }}
           tags: true
 
