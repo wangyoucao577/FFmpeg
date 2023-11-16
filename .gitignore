@@ -41,3 +41,7 @@
 /src
 /mapfile
 /tools/python/__pycache__/
+
+.cache
+compile_commands*.json
+fate-suite

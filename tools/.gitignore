@@ -20,3 +20,5 @@
 /uncoded_frame
 /venc_data_dump
 /zmqsend
+
+/enc_recon_frame_test
